@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>OSHI</title>
+	<link rel="preload" href="/fonts/Georama-Medium.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/fonts/Georama-Bold.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/fonts/Georama-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/fonts/Raleway-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/fonts/Raleway-Bold.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/fonts/Raleway-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/fonts/Raleway-Black.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/media.css" />
+</head>
+<body id="page" class="ru">
+	<div class="wrapper">
+		<header class="header">
+			<div class="wrap row2">
+				<div class="header-left row">
+					<svg class="menu-open" id="js-menu-open" width="30" height="27" viewBox="0 0 30 27" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+					<path d="M0 0H30V3.33333H0V0ZM0 11.6667H20V15H0V11.6667ZM0 23.3333H30V26.6667H0V23.3333Z"/>
+					</svg>
+					<svg class="header-logo" width="108" height="18" viewBox="0 0 108 18" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+					<path d="M0 17.112L3.264 0.312H6.336L10.104 10.224L13.872 0.312H16.944L20.208 17.112H16.536L14.784 8.04L11.352 17.112H8.856L5.424 8.04L3.672 17.112H0Z"/>
+					<path d="M23.5659 17.112V0.312H34.2699V3.912H27.1659V6.312H32.6379V9.912H27.1659V13.512H34.2699V17.112H23.5659Z"/>
+					<path d="M50.1019 0.312V3.912H45.3019V17.112H41.7019V3.912H36.9019V0.312H50.1019Z"/>
+					<path d="M59.8181 17.424C58.6821 17.424 57.6141 17.2 56.6141 16.752C55.6141 16.296 54.7341 15.668 53.9741 14.868C53.2141 14.068 52.6181 13.144 52.1861 12.096C51.7541 11.04 51.5381 9.912 51.5381 8.712C51.5381 7.512 51.7541 6.388 52.1861 5.34C52.6181 4.284 53.2141 3.356 53.9741 2.556C54.7341 1.756 55.6141 1.132 56.6141 0.684C57.6141 0.228 58.6821 0 59.8181 0C60.9621 0 62.0341 0.228 63.0341 0.684C64.0341 1.132 64.9141 1.756 65.6741 2.556C66.4341 3.356 67.0261 4.284 67.4501 5.34C67.8821 6.388 68.0981 7.512 68.0981 8.712C68.0981 9.912 67.8821 11.04 67.4501 12.096C67.0261 13.144 66.4341 14.068 65.6741 14.868C64.9141 15.668 64.0341 16.296 63.0341 16.752C62.0341 17.2 60.9621 17.424 59.8181 17.424ZM59.8181 13.824C60.4581 13.824 61.0581 13.692 61.6181 13.428C62.1861 13.156 62.6861 12.788 63.1181 12.324C63.5501 11.852 63.8861 11.308 64.1261 10.692C64.3741 10.076 64.4981 9.416 64.4981 8.712C64.4981 8.008 64.3741 7.348 64.1261 6.732C63.8861 6.116 63.5501 5.576 63.1181 5.112C62.6861 4.64 62.1861 4.272 61.6181 4.008C61.0581 3.736 60.4581 3.6 59.8181 3.6C59.1781 3.6 58.5741 3.736 58.0061 4.008C57.4461 4.272 56.9501 4.64 56.5181 5.112C56.0861 5.576 55.7461 6.116 55.4981 6.732C55.2581 7.348 55.1381 8.008 55.1381 8.712C55.1381 9.416 55.2581 10.076 55.4981 10.692C55.7461 11.308 56.0861 11.852 56.5181 12.324C56.9501 12.788 57.4461 13.156 58.0061 13.428C58.5741 13.692 59.1781 13.824 59.8181 13.824Z"/>
+					<path d="M77.1109 17.424C76.1669 17.424 75.2629 17.276 74.3989 16.98C73.5349 16.676 72.7789 16.244 72.1309 15.684C71.4829 15.116 71.0149 14.44 70.7269 13.656L74.1109 12.408C74.1909 12.64 74.3669 12.864 74.6389 13.08C74.9189 13.296 75.2709 13.476 75.6949 13.62C76.1189 13.756 76.5909 13.824 77.1109 13.824C77.5909 13.824 78.0429 13.756 78.4669 13.62C78.8909 13.476 79.2349 13.28 79.4989 13.032C79.7629 12.784 79.8949 12.496 79.8949 12.168C79.8949 11.832 79.7549 11.556 79.4749 11.34C79.2029 11.116 78.8509 10.94 78.4189 10.812C77.9949 10.676 77.5589 10.576 77.1109 10.512C75.8949 10.336 74.8029 10.048 73.8349 9.648C72.8749 9.24 72.1149 8.68 71.5549 7.968C71.0029 7.256 70.7269 6.352 70.7269 5.256C70.7269 4.208 71.0229 3.292 71.6149 2.508C72.2069 1.716 72.9869 1.1 73.9549 0.660001C74.9309 0.22 75.9829 0 77.1109 0C78.0549 0 78.9589 0.152 79.8229 0.456001C80.6949 0.752001 81.4549 1.184 82.1029 1.752C82.7509 2.32 83.2149 3 83.4949 3.792L80.1109 5.016C80.0309 4.784 79.8509 4.564 79.5709 4.356C79.2989 4.14 78.9509 3.964 78.5269 3.828C78.1029 3.692 77.6309 3.624 77.1109 3.624C76.6469 3.616 76.2029 3.684 75.7789 3.828C75.3549 3.972 75.0069 4.168 74.7349 4.416C74.4629 4.664 74.3269 4.944 74.3269 5.256C74.3269 5.688 74.4549 6.012 74.7109 6.228C74.9669 6.436 75.3029 6.584 75.7189 6.672C76.1429 6.76 76.6069 6.84 77.1109 6.912C78.2629 7.08 79.3229 7.38 80.2909 7.812C81.2589 8.244 82.0349 8.82 82.6189 9.54C83.2029 10.26 83.4949 11.136 83.4949 12.168C83.4949 13.216 83.1989 14.136 82.6069 14.928C82.0229 15.712 81.2469 16.324 80.2789 16.764C79.3109 17.204 78.2549 17.424 77.1109 17.424Z"/>
+					<path d="M96.1629 0.312H99.7629V17.112H96.1629V9.912H90.2109V17.112H86.6109V0.312H90.2109V6.312H96.1629V0.312Z"/>
+					<path d="M103.717 17.112V0.312H107.317V17.112H103.717Z"/>
+					</svg>
+				</div>
+				<nav class="header-nav row">
+					<a href="#" class="header-link js-scroll-to" data-id="#js-roadmap">Road Map</a>
+					<svg class="header-star" width="16" height="15" viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg">
+					<path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"/>
+					</svg>
+					<a href="https://finance.metoshi.com/" class="header-link">Finance</a>
+					<svg class="header-star" width="16" height="15" viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg">
+					<path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"/>
+					</svg>
+					<a href="#" class="header-link js-scroll-to" data-id="#js-tokenomics">Tokenomics</a>
+					<svg class="header-star" width="16" height="15" viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg">
+					<path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"/>
+					</svg>
+					<a href="https://whitepaper.metoshi.com/" class="header-link">Whitepaper</a>
+					<svg class="header-star" width="16" height="15" viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg">
+					<path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"/>
+					</svg>
+					<a href="#" class="header-link js-scroll-to" data-id="#js-contacts">Contacts</a>
+				</nav>
+				<div class="header-right row">
+					<div class="header-lang row">
+						<a href="#" class="header-lang-item ru active js-language" data-lang="ru" data-toggle="en">Rus</a>
+						<a href="#" class="header-lang-item js-language" data-lang="en" data-toggle="ru">Eng</a>
+					</div>
+					<a href="https://finance.metoshi.com/" class="header-btn">
+						<span>Buy OSHI</span>
+						<img src="img/star.png" alt="" width="24" height="24">
+					</a>
+				</div>
+			</div> <!-- /.wrap -->
+		</header> <!-- /.header -->
+
+
+		<section class="section1">
+			<div class="wrap">
+				<h1 class="section1-title gradient-white">OSHI <span class="gradient-white">Token
+						<picture>
+							<source type="image/svg+xml" data-srcset="img/border1_480.svg" srcset="img/placehold.png" media="(max-width: 480px)">
+							<img data-src="img/border1.svg" alt="" width="410" height="161" class="lazyload" src="img/placehold.png">
+						</picture>
+					</span>
+				</h1>
+				<p class="section1-text1 gradient-white"><span class="gradient-purple js-lang-s1t1">Основной функционал</span> Governance OSHI Token</p>
+				<p class="section1-text2">
+					<img src="img/star.svg" alt="" width="18" height="18">
+					<span class="js-lang-s1t2">Получение дивидендов от игры <strong>METOLAND</strong> и любой деятельности платформы <strong>Metoshi</strong></span>
+					<img src="img/star.svg" alt="" width="18" height="18">
+				</p>
+				<div class="section1-action row">
+					<div class="section1-action-label">
+						<p><span>Play2Earn</span><span class="gamefi">GameFi</span></p>
+						<p><span class="metoland">METOLAND</span></p>
+					</div>
+					<div class="section1-wrap-btn">
+						<a href="https://finance.metoshi.com/" class="btn">BUY OSHI</a>
+						<img data-src="img/stars/2.svg" alt="" width="32" height="32" class="star4 lazyload" src="img/placehold.png">
+					</div>
+				</div>
+			</div> <!-- /.wrap -->
+			<img src="img/space_bg.svg" alt="" width="1696" height="1696" class="space-bg">
+		</section> <!-- /.section1 -->
+
+
+		<section class="section2">
+			<div class="wrap">
+				<h2 class="section2-title">
+					<i class="section2-title-line1 js-lang-s2t1">Преимущества <span>Уставного</span></i>
+					<i class="section2-title-line2 js-lang-s2t2">токена <span>OSHI</span></i>
+				</h2>
+				<p class="section2-description gradient-white js-lang-s2t3">Пассивный доход и дивиденды каждому холдеру <span>OSHI</span> от продажи всех Игровых <span class="gradient-pink">NFTs METOLAND</span> и иных <span>NFTs</span> платформы <span>Metoshi</span></p>
+			</div> <!-- /.wrap -->
+			<div class="person painter">
+				<picture>
+					<source type="image/png" data-srcset="img/bg/2_m.png" srcset="img/placehold.png" media="(max-width: 480px)">
+					<img data-src="img/bg/2.png" alt="" width="816" height="1344" class="person-bg lazyload" src="img/placehold.png">
+				</picture>
+				<img data-src="img/painter.png" alt="" width="230" height="332" class="person-img lazyload" src="img/placehold.png">
+			</div>
+			<div class="person digger">
+				<picture>
+					<source type="image/png" data-srcset="img/bg/3_m.png" srcset="img/placehold.png" media="(max-width: 480px)">
+					<img data-src="img/bg/3.png" alt="" width="848" height="1376" class="person-bg lazyload" src="img/placehold.png">
+				</picture>
+				<img data-src="img/digger.png" alt="" width="230" height="343" class="person-img lazyload" src="img/placehold.png">
+			</div>
+		</section> <!-- /.section2 -->
+
+
+		<section class="section3">
+			<div class="wrap">
+				<h2 class="section3-title">
+					<i class="section3-title-line1"><span class="js-lang-s3t1">Платформа</span> <strong><span class="js-lang-s3t2">Metoshi</span>
+							<picture>
+								<source type="image/svg+xml" data-srcset="img/border2_480.svg" srcset="img/placehold.png" media="(max-width: 480px)">
+								<img data-src="img/border2.svg" alt="" width="284" height="88" class="lazyload" src="img/placehold.png">
+							</picture>
+						</strong>
+					</i>
+					<i class="section3-title-line2 js-lang-s3t3">сегодня:</i>
+				</h2>
+				<ul class="section3-list">
+					<li class="section3-list-item row">
+						<a href="https://pancakeswap.finance/swap?outputCurrency=0xDc3541806D651eC79bA8639a1b495ACf503eB2Dd" target="_blank" class="section3-list-link">
+							<img data-src="img/stars/4.svg" alt="" width="32" height="32" class="section3-list-star1 lazyload" src="img/placehold.png">
+							<div class="js-lang-s3t4">Токен <span class="gradient-yellow">МЕТО</span> успешно торгуется на <span class="gradient-purple">Pancakeswap</span></div>
+							<img data-src="img/stars/4.svg" alt="" width="32" height="32" class="section3-list-star2 lazyload" src="img/placehold.png">
+						</a>
+					</li>
+					<li class="section3-list-item row">
+						<a href="#" class="section3-list-link">
+							<img data-src="img/stars/4.svg" alt="" width="32" height="32" class="section3-list-star1 lazyload" src="img/placehold.png">
+							<div class="js-lang-s3t5">Готова игра <span class="gradient-purple">METOLAND</span> - <span class="gradient-yellow">P2E & F2P</span></div>
+							<img data-src="img/stars/4.svg" alt="" width="32" height="32" class="section3-list-star2 lazyload" src="img/placehold.png">
+						</a>
+					</li>
+					<li class="section3-list-item row">
+						<a href="#" class="section3-list-link js-modal-open" data-id="#js-modal">
+							<img data-src="img/stars/4.svg" alt="" width="32" height="32" class="section3-list-star1 lazyload" src="img/placehold.png">
+							<div class="js-lang-s3t6">Игровая <span class="gradient-yellow">NFTs</span> коллекция</div>
+							<img data-src="img/stars/4.svg" alt="" width="32" height="32" class="section3-list-star2 lazyload" src="img/placehold.png">
+						</a>
+					</li>
+					<li class="section3-list-item row">
+						<a href="https://metoshi.com/" class="section3-list-link">
+							<img data-src="img/stars/4.svg" alt="" width="32" height="32" class="section3-list-star1 lazyload" src="img/placehold.png">
+							<div class="js-lang-s3t7">Коллекция комиксов о красной панде <span class="gradient-yellow">Metoshi</span></div>
+							<img data-src="img/stars/4.svg" alt="" width="32" height="32" class="section3-list-star2 lazyload" src="img/placehold.png">
+						</a>
+					</li>
+				</ul>
+			</div> <!-- /.wrap -->
+
+			<div class="wrap-slider wrap">
+				<div class="slider js-wrap-slider">
+					<div class="slider-container row">
+						<a href="#" class="slider-prev icon js-prev-slide">
+							<svg width="21" height="16" viewBox="0 0 21 16" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0.292892 7.29289C-0.0976315 7.68342 -0.0976315 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292892 7.29289ZM21 7L1 7V9L21 9V7Z"/>
+							</svg>
+						</a>
+						<div class="slider-wrap-body">
+							<div class="slider-body" id="js-slider">
+								<div class="slider-inside js-slider-inside">
+									<div class="slider-item js-slide">
+										<div class="slider-item-video js-youtube" data-embed="Af5qmnKoxao">
+											<img data-src="img/video/1.jpg" alt="" width="444" height="235" class="slider-item-preview lazyload" src="img/placehold.png">
+										</div>	
+									</div>
+									<div class="slider-item js-slide">
+										<div class="slider-item-video js-youtube" data-embed="jy5l0qHONNE">
+											<img data-src="img/video/2.jpg" alt="" width="444" height="235" class="slider-item-preview lazyload" src="img/placehold.png">
+										</div>
+									</div>
+									<div class="slider-item js-slide">
+										<div class="slider-item-video js-youtube" data-embed="cozuMTAR7J8">
+											<img data-src="img/video/3.jpg" alt="" width="444" height="235" class="slider-item-preview lazyload" src="img/placehold.png">
+										</div>
+									</div>			
+								</div> <!-- /.slider-inside -->
+							</div>
+						</div>
+						<a href="#" class="slider-next icon js-next-slide">
+							<svg width="21" height="16" viewBox="0 0 21 16" xmlns="http://www.w3.org/2000/svg">
+							<path d="M20.7071 8.70711C21.0976 8.31658 21.0976 7.68342 20.7071 7.29289L14.3431 0.928932C13.9526 0.538408 13.3195 0.538408 12.9289 0.928932C12.5384 1.31946 12.5384 1.95262 12.9289 2.34315L18.5858 8L12.9289 13.6569C12.5384 14.0474 12.5384 14.6805 12.9289 15.0711C13.3195 15.4616 13.9526 15.4616 14.3431 15.0711L20.7071 8.70711ZM0 9H20V7H0L0 9Z"/>
+							</svg>
+						</a>
+					</div> <!-- /.slider-container -->
+				</div> <!-- /.slider -->
+			</div> <!-- /.wrap-slider -->
+			<img data-src="img/farmer.png" alt="" width="652" height="695" class="section3-img lazyload" src="img/placehold.png">
+		</section> <!-- /.section3 -->
+
+
+		<section class="section4">
+			<div class="wrap">
+				<div class="section4-subtitle">Total Supply</div>
+				<h2 class="section4-title">75 000 000</h2>
+				<div class="section4-container">
+					<div class="section4-col left">
+						<h3 class="section4-col-title">BUY</h3>
+						<ul class="section4-list">
+							<li class="section4-list-item border">
+								Holders OSHI
+								<p>Rewald in METO</p>
+								<div class="section4-list-value border row"><span>Rewald in METO </span>1%</div>
+							</li>
+							<li class="section4-list-item border">
+								Liquidity OSHI
+								<div class="section4-list-value border row">0.5%</div>
+							</li>
+							<li class="section4-list-item border">
+								Liquidity METO
+								<div class="section4-list-value border row">0.5%</div>
+							</li>
+							<li class="section4-list-item border">
+								Marketing
+								<div class="section4-list-value border row">1%</div>
+							</li>
+						</ul>
+					</div>
+					<div class="section4-wrap-img">
+						<img data-src="img/gamersha.png" alt="" width="559" height="1002" class="section4-gamersha lazyload" src="img/placehold.png">
+						<img data-src="img/stars/1.svg" alt="" width="19" height="19" class="section4-star1 lazyload" src="img/placehold.png">
+						<img data-src="img/stars/2.svg" alt="" width="32" height="32" class="section4-star2 lazyload" src="img/placehold.png">
+					</div>
+					<div class="section4-col right">
+						<h3 class="section4-col-title">SELL</h3>
+						<ul class="section4-list">
+							<li class="section4-list-item border">
+								Holders OSHI
+								<p>Rewald in METO</p>
+								<div class="section4-list-value border row"><span>Rewald in METO </span>3%</div>
+							</li>
+							<li class="section4-list-item border">
+								Liquidity OSHI
+								<div class="section4-list-value border row">3%</div>
+							</li>
+							<li class="section4-list-item border">
+								Liquidity METO
+								<div class="section4-list-value border row">2%</div>
+							</li>
+							<li class="section4-list-item border">
+								Marketing
+								<div class="section4-list-value border row">2%</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div> <!-- /.wrap -->
+		</section> <!-- /.section4 -->
+
+
+		<section class="section5" id="js-tokenomics">
+			<img data-src="img/bg/8.png" alt="" width="720" height="1152" class="bg8 lazyload" src="img/placehold.png">
+			<div class="wrap">
+				<h2 class="section5-title"><span class="js-lang-s5t1">Токеномика</span> <strong>OSHI
+						<picture>
+							<source type="image/svg+xml" data-srcset="img/border3_480.svg" srcset="img/placehold.png" media="(max-width: 480px)">
+							<img data-src="img/border3.svg" alt="" width="249" height="117" class="lazyload" src="img/placehold.png">
+						</picture>
+					</strong>
+				</h2>
+				<div class="wrap-items stats" id="js-stats">
+					<div class="area js-progress">
+						<div class="area-visible">
+							<div class="area-bar">
+								<div class="area-bar-fill js-fill"></div>
+							</div>
+						</div>
+						<div class="area-content">
+							<p class="area-value"><span class="js-value">20</span>%</p>
+							<p class="area-label">IDO</p>
+							<p class="area-token row">
+								<img data-src="img/star.svg" alt="" width="17" height="17" class="lazyload" src="img/placehold.png">
+								<span>15 000 000 OSHI Token</span>
+								<img data-src="img/star.svg" alt="" width="17" height="17" class="lazyload" src="img/placehold.png">
+							</p>
+						</div>
+					</div> <!-- /.area -->
+					<div class="area js-progress">
+						<div class="area-visible">
+							<div class="area-bar">
+								<div class="area-bar-fill js-fill"></div>
+							</div>
+						</div>
+						<div class="area-content">
+							<p class="area-value"><span class="js-value">10.6</span>%</p>
+							<p class="area-label">Liquidity</p>
+							<p class="area-token row">
+								<img data-src="img/star.svg" alt="" width="17" height="17" class="lazyload" src="img/placehold.png">
+								<span>7 950 000 OSHI Token</span>
+								<img data-src="img/star.svg" alt="" width="17" height="17" class="lazyload" src="img/placehold.png">
+							</p>
+						</div>
+					</div> <!-- /.area -->
+					<div class="area js-progress">
+						<div class="area-visible">
+							<div class="area-bar">
+								<div class="area-bar-fill js-fill"></div>
+							</div>
+						</div>
+						<div class="area-content">
+							<p class="area-value"><span class="js-value">19</span>%</p>
+							<p class="area-label">Development & Advisers</p>
+							<p class="area-token row">
+								<img data-src="img/star.svg" alt="" width="17" height="17" class="lazyload" src="img/placehold.png">
+								<span>14 250 000 OSHI Token</span>
+								<img data-src="img/star.svg" alt="" width="17" height="17" class="lazyload" src="img/placehold.png">
+							</p>
+						</div>
+					</div> <!-- /.area -->
+					<div class="area js-progress">
+						<div class="area-visible">
+							<div class="area-bar">
+								<div class="area-bar-fill js-fill"></div>
+							</div>
+						</div>
+						<div class="area-content">
+							<p class="area-value"><span class="js-value">14.4</span>%</p>
+							<p class="area-label">Marketing</p>
+							<p class="area-token row">
+								<img data-src="img/star.svg" alt="" width="17" height="17" class="lazyload" src="img/placehold.png">
+								<span>10 800 000 OSHI Token</span>
+								<img data-src="img/star.svg" alt="" width="17" height="17" class="lazyload" src="img/placehold.png">
+							</p>
+						</div>
+					</div> <!-- /.area -->
+					<div class="area js-progress">
+						<div class="area-visible">
+							<div class="area-bar">
+								<div class="area-bar-fill js-fill"></div>
+							</div>
+						</div>
+						<div class="area-content">
+							<p class="area-value"><span class="js-value">18</span>%</p>
+							<p class="area-label">Staking Pool & Farming Pool</p>
+							<p class="area-token row">
+								<img data-src="img/star.svg" alt="" width="17" height="17" class="lazyload" src="img/placehold.png">
+								<span>10 500 000 OSHI Token</span>
+								<img data-src="img/star.svg" alt="" width="17" height="17" class="lazyload" src="img/placehold.png">
+							</p>
+						</div>
+					</div> <!-- /.area -->
+					<div class="area js-progress">
+						<div class="area-visible">
+							<div class="area-bar">
+								<div class="area-bar-fill js-fill"></div>
+							</div>
+						</div>
+						<div class="area-content">
+							<p class="area-value"><span class="js-value">17</span>%</p>
+							<p class="area-label">Team & Partnership</p>
+							<p class="area-token row">
+								<img data-src="img/star.svg" alt="" width="17" height="17" class="lazyload" src="img/placehold.png">
+								<span>12 750 000 OSHI Token</span>
+								<img data-src="img/star.svg" alt="" width="17" height="17" class="lazyload" src="img/placehold.png">
+							</p>
+						</div>
+					</div> <!-- /.area -->
+				</div>
+			</div> <!-- /.wrap -->
+			<img data-src="img/stars/3.svg" alt="" width="16" height="16" class="section5-star1 lazyload" src="img/placehold.png">
+			<img data-src="img/stars/3.svg" alt="" width="16" height="16" class="section5-star2 lazyload" src="img/placehold.png">
+			<img data-src="img/stars/3.svg" alt="" width="16" height="16" class="section5-star3 lazyload" src="img/placehold.png">
+		</section> <!-- /.section5 -->
+
+
+		<section class="section6" id="js-roadmap">
+			<div class="roadmap-wrap-img static" id="js-roadmap-img">
+				<div class="roadmap-line"></div>
+				<img data-src="img/squirrel.png" alt="" width="497" height="697" class="roadmap-img lazyload" src="img/placehold.png">
+			</div>
+			<div class="wrap">
+				<h2 class="section6-wrap-title"><span class="section6-title">OSHI RoadMap<span class="section6-title-year">2022</span></span></h2>
+				<ul class="roadmap">
+					<li class="roadmap-item">
+						<span class="roadmap-item-point"></span>
+						<p class="roadmap-body"><span>1</span> April - May: <strong>OSHI IDO</strong></p>
+					</li>
+					<li class="roadmap-item">
+						<span class="roadmap-item-point"></span>
+						<p class="roadmap-body"><span>2</span> May: <strong>OSHI LISTING</strong></p>
+					</li>
+					<li class="roadmap-item">
+						<span class="roadmap-item-point"></span>
+						<p class="roadmap-body"><span>3</span> May</p>
+						<p class="roadmap-description">First dividends of first selling of METOLAND Gaming NFTs</p>
+					</li>
+					<li class="roadmap-item">
+						<span class="roadmap-item-point"></span>
+						<p class="roadmap-body"><span>4</span> May</p>
+						<p class="roadmap-description">Dividends of second selling of METOLAND Gaming NFTs</p>
+					</li>
+					<li class="roadmap-item">
+						<span class="roadmap-item-point"></span>
+						<p class="roadmap-body"><span>5</span> June - Jule</p>
+						<p class="roadmap-description">Devidends of selling Metoshi generative NFTs</p>
+					</li>
+					<li class="roadmap-item">
+						<span class="roadmap-item-point"></span>
+						<p class="roadmap-body"><span>6</span> August</p>
+						<p class="roadmap-description">Devidends of selling METOLAND 2.0 Gaming NFTs</p>
+					</li>
+					<li class="roadmap-item">
+						<span class="roadmap-item-point"></span>
+						<p class="roadmap-body"><span>7</span> September - October</p>
+						<p class="roadmap-description">Devidends of selling first MetOverse Metoland NFT Lands</p>
+					</li>
+				</ul>
+			</div> <!-- /.wrap -->
+		</section> <!-- /.section6 -->
+
+
+		<section class="section7">
+			<div class="wrap">
+				<h2 class="section7-title">
+					<span>
+						FAQ
+						<img data-src="img/stars/4.svg" alt="" width="40" height="40" class="section7-star1 lazyload" src="img/placehold.png">
+						<img data-src="img/stars/5.svg" alt="" width="17" height="17" class="section7-star2 lazyload" src="img/placehold.png">
+					</span>
+				</h2>
+				<div class="faq">
+					<div class="faq-item">
+						<div class="faq-question js-question">
+							<div class="faq-question-icon"></div>
+							<div class="faq-question-text">Who is Metoshi?</div>
+						</div>
+						<div class="faq-answer js-answer">METOSHI is a one-stop entertainment platform that combines a Comics Studio and Metoshi GameFI Studio.</div>
+					</div>
+					<div class="faq-item">
+						<div class="faq-question js-question">
+							<div class="faq-question-icon"></div>
+							<div class="faq-question-text">What is a Governance OSHI Token</div>
+						</div>
+						<div class="faq-answer js-answer">It is a Governance Token. Furthermore - earn dividends & vote, as well as other perks of the Ecosystem</div>
+					</div>
+					<div class="faq-item">
+						<div class="faq-question js-question">
+							<div class="faq-question-icon"></div>
+							<div class="faq-question-text">How can I buy or sell Governance OSHI Token</div>
+						</div>
+						<div class="faq-answer js-answer">At the first stage there was a IDO, a limited amount can be purchased with the METO token, and on the exchange after listing. You can sell Governance OSHI Token after listing.</div>
+					</div>
+					<div class="faq-item">
+						<div class="faq-question js-question">
+							<div class="faq-question-icon"></div>
+							<div class="faq-question-text">What are the benefits of the OSHI token?</div>
+						</div>
+						<div class="faq-answer js-answer">
+							<ul>
+								<li>• Regular accrual of dividends for holding the OSHI token</li>
+								<li>• Participation in voting on key decisions</li>
+							</ul>
+						</div>
+					</div>
+					<div class="faq-item">
+						<div class="faq-question js-question">
+							<div class="faq-question-icon"></div>
+							<div class="faq-question-text">What blockchain does Metoshi use?</div>
+						</div>
+						<div class="faq-answer js-answer">Binance Smart Chain. It is a blockchain that enables scalable, secure, and instant transactions. For the first and second quarters of 2022.</div>
+					</div>
+					<div class="faq-item">
+						<div class="faq-question js-question">
+							<div class="faq-question-icon"></div>
+							<div class="faq-question-text">What are the utilities of METO token?</div>
+						</div>
+						<div class="faq-answer js-answer">METO Token is a BEP-20 utility token of Metoshi Platform. METO is live on PancakeSwap, all Metoshi services will be supplied only for METO</div>
+					</div>
+					<div class="faq-item">
+						<div class="faq-question js-question">
+							<div class="faq-question-icon"></div>
+							<div class="faq-question-text">What NFT tools are offered on Metoshi Platform?</div>
+						</div>
+						<div class="faq-answer js-answer">
+							<ul>
+								<li>1) In-game NFTs - game heroes, wearables, weapons, etc.</li>
+								<li>2) Comics NFT  - After collecting the entire collection, you can get guaranteed Metoshi pre-sale allocations.</li>
+								<li>3) Collectible / Generative NFT (Farming)</li>
+							</ul>
+						</div>
+					</div>
+				</div> <!-- /.faq -->
+			</div> <!-- /.wrap -->
+		</section> <!-- /.section7 -->
+
+
+		<section class="section8">
+			<div class="wrap">
+				<h2 class="section8-title">Partners</h2>
+				<div class="wrap-items">
+					<a href="#" class="partner">
+						<img data-src="img/partners/1.png" alt="" width="155" height="83" class="partner-logo lazyload" src="img/placehold.png">
+					</a>
+					<a href="#" class="partner">
+						<img data-src="img/partners/2.png" alt="" width="356" height="83" class="partner-logo lazyload" src="img/placehold.png">
+					</a>
+					<a href="#" class="partner">
+						<img data-src="img/partners/3.png" alt="" width="245" height="83" class="partner-logo lazyload" src="img/placehold.png">
+					</a>
+					<a href="#" class="partner">
+						<img data-src="img/partners/4.png" alt="" width="254" height="83" class="partner-logo lazyload" src="img/placehold.png">
+					</a>
+					<a href="#" class="partner">
+						<img data-src="img/partners/5.png" alt="" width="162" height="83" class="partner-logo lazyload" src="img/placehold.png">
+					</a>
+					<a href="#" class="partner">
+						<img data-src="img/partners/6.png" alt="" width="197" height="83" class="partner-logo lazyload" src="img/placehold.png">
+					</a>
+					<a href="#" class="partner">
+						<img data-src="img/partners/7.png" alt="" width="237" height="83" class="partner-logo lazyload" src="img/placehold.png">
+					</a>
+					<a href="#" class="partner">
+						<img data-src="img/partners/8.png" alt="" width="246" height="83" class="partner-logo lazyload" src="img/placehold.png">
+					</a>
+					<a href="#" class="partner">
+						<img data-src="img/partners/9.png" alt="" width="244" height="83" class="partner-logo lazyload" src="img/placehold.png">
+					</a>
+					<a href="#" class="partner">
+						<img data-src="img/partners/10.png" alt="" width="219" height="83" class="partner-logo lazyload" src="img/placehold.png">
+					</a>
+				</div>
+			</div> <!-- /.wrap -->
+		</section> <!-- /.section8 -->
+
+
+		<section class="section9" id="js-contacts">
+			<div class="wrap">
+				<h2 class="section9-title">
+					<span>
+						Contacts
+						<img data-src="img/stars/4.svg" alt="" width="16" height="16" class="section9-star1 lazyload" src="img/placehold.png">
+						<img data-src="img/stars/4.svg" alt="" width="40" height="40" class="section9-star2 lazyload" src="img/placehold.png">
+						<img data-src="img/stars/4.svg" alt="" width="40" height="40" class="section9-star3 lazyload" src="img/placehold.png">
+						<img data-src="img/stars/4.svg" alt="" width="16" height="16" class="section9-star4 lazyload" src="img/placehold.png">
+					</span>
+				</h2>
+				<div class="contacts row2">
+					<a href="https://www.facebook.com/profile.php?id=100054355667286" class="contacts-link" target="_blank">
+						<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M60 0C26.8629 0 0 26.8629 0 60C0 93.1371 26.8629 120 60 120C93.1371 120 120 93.1371 120 60C120 26.8629 93.1371 0 60 0ZM66.2539 62.6355V95.2787H52.7477V62.6368H46V51.3878H52.7477V44.6339C52.7477 35.457 56.5578 30 67.383 30H76.3952V41.2503H70.7619C66.548 41.2503 66.2692 42.8223 66.2692 45.7563L66.2539 51.3865H76.459L75.2648 62.6355H66.2539Z"/>
+						</svg>
+					</a>
+					<a href="https://twitter.com/MetoshiRedpanda" class="contacts-link" target="_blank">
+						<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M60 0C26.8629 0 0 26.8629 0 60C0 93.1371 26.8629 120 60 120C93.1371 120 120 93.1371 120 60C120 26.8629 93.1371 0 60 0ZM58.3289 50.8449L58.203 48.7687C57.8253 43.3877 61.1408 38.4728 66.3869 36.5662C68.3175 35.8882 71.591 35.8035 73.7314 36.3967C74.5708 36.6509 76.1656 37.4983 77.2988 38.261L79.3553 39.6592L81.6216 38.9389C82.8806 38.5576 84.5594 37.922 85.3148 37.4983C86.0283 37.117 86.6578 36.9051 86.6578 37.0322C86.6578 37.7525 85.105 40.21 83.8039 41.5658C82.0413 43.4725 82.5449 43.642 86.1122 42.3709C88.2526 41.6506 88.2946 41.6506 87.8749 42.4556C87.6231 42.8793 86.3221 44.3623 84.9371 45.7181C82.5869 48.0485 82.461 48.3027 82.461 50.2517C82.461 53.26 81.034 59.5308 79.6071 62.9627C76.963 69.403 71.2973 76.0551 65.6315 79.4023C57.6574 84.1054 47.0393 85.2918 38.1 82.5377C35.1202 81.6056 30 79.2329 30 78.8092C30 78.682 31.5528 78.5126 33.4414 78.4702C37.3865 78.3855 41.3316 77.2838 44.6891 75.3348L46.9554 73.979L44.3533 73.0892C40.6601 71.8181 37.3445 68.8945 36.5052 66.1405C36.2533 65.2507 36.3373 65.2084 38.6875 65.2084L41.1217 65.166L39.0653 64.1915C36.6311 62.9627 34.4067 60.8866 33.3155 58.7681C32.5181 57.2428 31.5109 53.3871 31.8047 53.0905C31.8886 52.9634 32.7699 53.2176 33.7772 53.5566C36.673 54.6158 37.0508 54.3616 35.372 52.5821C32.2243 49.3619 31.2591 44.5741 32.7699 40.0405L33.4834 38.0067L36.2533 40.7608C41.9191 46.3113 48.5922 49.6161 56.2305 50.5907L58.3289 50.8449Z"/>
+						</svg>
+					</a>
+					<a href="https://www.instagram.com/metoshi_redpanda/" class="contacts-link" target="_blank">
+						<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M60 0C26.8629 0 0 26.8629 0 60C0 93.1371 26.8629 120 60 120C93.1371 120 120 93.1371 120 60C120 26.8629 93.1371 0 60 0ZM46.8082 28.1933C50.2209 28.038 51.3118 28 59.998 28C68.6868 28 69.7738 28.038 73.1865 28.1933C76.5932 28.3493 78.9199 28.8887 80.9599 29.68C83.0666 30.4967 84.8466 31.59 86.6266 33.3701C88.4066 35.1487 89.5 36.9341 90.32 39.0388C91.1067 41.0735 91.6467 43.3988 91.8067 46.8055C91.96 50.2189 92 51.3096 92 60.0003C92 68.6911 91.96 69.7791 91.8067 73.1925C91.6467 76.5978 91.1067 78.9239 90.32 80.9592C89.5 83.0632 88.4066 84.8486 86.6266 86.6273C84.8486 88.4073 83.0659 89.5033 80.9619 90.3206C78.9259 91.112 76.5978 91.6513 73.1911 91.8073C69.7778 91.9627 68.6904 92.0007 59.999 92.0007C51.3089 92.0007 50.2189 91.9627 46.8055 91.8073C43.3995 91.6513 41.0735 91.112 39.0374 90.3206C36.9341 89.5033 35.1487 88.4073 33.3707 86.6273C31.5914 84.8486 30.498 83.0632 29.68 80.9585C28.8893 78.9239 28.35 76.5985 28.1933 73.1918C28.0387 69.7784 28 68.6911 28 60.0003C28 51.3096 28.04 50.2182 28.1927 46.8049C28.346 43.3995 28.886 41.0735 29.6793 39.0381C30.4994 36.9341 31.5927 35.1487 33.3727 33.3701C35.1514 31.5907 36.9368 30.4974 39.0414 29.68C41.0761 28.8887 43.4015 28.3493 46.8082 28.1933ZM59.998 28C59.9997 28 60.0013 28 60.003 28H59.993C59.9947 28 59.9963 28 59.998 28Z"/>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M57.1324 33.7668C57.6898 33.7659 58.2895 33.7662 58.9366 33.7665C59.2786 33.7666 59.6339 33.7668 60.0031 33.7668C68.5472 33.7668 69.5599 33.7975 72.9339 33.9508C76.054 34.0935 77.7473 34.6148 78.8753 35.0528C80.3687 35.6328 81.4334 36.3261 82.5527 37.4462C83.6727 38.5662 84.3661 39.6329 84.9474 41.1262C85.3854 42.2529 85.9074 43.9462 86.0494 47.0663C86.2027 50.4396 86.2361 51.453 86.2361 59.9931C86.2361 68.5331 86.2027 69.5465 86.0494 72.9199C85.9067 76.0399 85.3854 77.7332 84.9474 78.8599C84.3674 80.3533 83.6727 81.4166 82.5527 82.536C81.4327 83.656 80.3694 84.3493 78.8753 84.9293C77.7487 85.3693 76.054 85.8893 72.9339 86.032C69.5606 86.1853 68.5472 86.2187 60.0031 86.2187C51.4584 86.2187 50.4457 86.1853 47.0723 86.032C43.9523 85.888 42.259 85.3667 41.1303 84.9287C39.6369 84.3487 38.5702 83.6553 37.4502 82.5353C36.3302 81.4153 35.6369 80.3513 35.0555 78.8573C34.6175 77.7306 34.0955 76.0372 33.9535 72.9172C33.8002 69.5438 33.7695 68.5305 33.7695 59.9851C33.7695 51.4396 33.8002 50.4316 33.9535 47.0583C34.0962 43.9382 34.6175 42.2449 35.0555 41.1169C35.6356 39.6235 36.3302 38.5568 37.4502 37.4368C38.5702 36.3168 39.6369 35.6235 41.1303 35.0421C42.2583 34.6021 43.9523 34.0821 47.0723 33.9388C50.0244 33.8055 51.1684 33.7655 57.1324 33.7588V33.7668ZM77.0842 39.0799C74.9642 39.0799 73.2441 40.798 73.2441 42.9187C73.2441 45.0387 74.9642 46.7587 77.0842 46.7587C79.2042 46.7587 80.9242 45.0387 80.9242 42.9187C80.9242 40.7986 79.2042 39.0786 77.0842 39.0786V39.0799ZM43.5703 60.0004C43.5703 50.925 50.9284 43.5669 60.0038 43.5669H60.0032C69.0786 43.5669 76.4347 50.925 76.4347 60.0004C76.4347 69.0758 69.0792 76.4306 60.0038 76.4306C50.9284 76.4306 43.5703 69.0758 43.5703 60.0004Z"/>
+						<path d="M60.0027 49.3335C65.8934 49.3335 70.6695 54.1089 70.6695 60.0003C70.6695 65.891 65.8934 70.667 60.0027 70.667C54.1113 70.667 49.3359 65.891 49.3359 60.0003C49.3359 54.1089 54.1113 49.3335 60.0027 49.3335Z"/>
+						</svg>
+					</a>
+					<a href="https://www.linkedin.com/company/metoshi-redpanda" class="contacts-link" target="_blank">
+						<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M60 0C26.8629 0 0 26.8629 0 60C0 93.1371 26.8629 120 60 120C93.1371 120 120 93.1371 120 60C120 26.8629 93.1371 0 60 0ZM28.8047 49.6948H42.402V90.5491H28.8047V49.6948ZM43.2969 37.0567C43.2087 33.051 40.3441 30 35.6926 30C31.041 30 28 33.051 28 37.0567C28 40.9795 30.9511 44.1184 35.5161 44.1184H35.603C40.3441 44.1184 43.2969 40.9795 43.2969 37.0567ZM75.7828 48.7353C84.7305 48.7353 91.4385 54.5756 91.4385 67.1243L91.4379 90.5489H77.8411V68.6918C77.8411 63.2018 75.8735 59.4556 70.9513 59.4556C67.1947 59.4556 64.9572 61.9811 63.9745 64.4204C63.6149 65.2946 63.5267 66.5126 63.5267 67.7336V90.55H49.9277C49.9277 90.55 50.107 53.5293 49.9277 49.6957H63.5267V55.4824C65.3314 52.7006 68.5636 48.7353 75.7828 48.7353Z"/>
+						</svg>
+					</a>
+					<a href="https://t.me/metoshi_rus" class="contacts-link js-lang-link1" target="_blank">
+						<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M0 60C0 93.1371 26.8629 120 60 120C93.1371 120 120 93.1371 120 60C120 26.8629 93.1371 0 60 0C26.8629 0 0 26.8629 0 60ZM48.9996 87.5002L50.0205 72.2058L50.0196 72.2052L77.8419 47.0977C79.063 46.014 77.5753 45.4856 75.9543 46.4685L41.6178 68.131L26.7863 63.5019C23.5834 62.5212 23.5604 60.3202 27.5054 58.7379L85.3004 36.4524C87.94 35.254 90.4878 37.0864 89.4801 41.1265L79.6376 87.508C78.9503 90.8039 76.9588 91.5922 74.1996 90.0697L59.2064 78.9925L51.9996 86.0002C51.9769 86.0223 51.9543 86.0443 51.9318 86.0662C51.1257 86.851 50.4589 87.5002 48.9996 87.5002Z"/>
+						</svg>
+					</a>
+					<a href="https://discord.com/invite/NmV9zx2xed" class="contacts-link" target="_blank">
+						<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M60 0C26.8629 0 0 26.8629 0 60C0 93.1371 26.8629 120 60 120C93.1371 120 120 93.1371 120 60C120 26.8629 93.1371 0 60 0ZM37.2629 26H84.7371C88.7406 26 92 29.22 92 33.21V96L84.3829 89.35L80.096 85.43L75.5611 81.265L77.4389 87.74H37.2629C33.2594 87.74 30 84.52 30 80.53V33.21C30 29.22 33.2594 26 37.2629 26Z"/>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M71.0609 71.7099C71.0609 71.7099 69.7855 70.2049 68.7226 68.8749C73.3638 67.5799 75.1352 64.7099 75.1352 64.7099C73.6826 65.6549 72.3009 66.3199 71.0609 66.7749C69.2895 67.5099 67.5889 67.9999 65.9238 68.2799C62.5226 68.9099 59.4049 68.7349 56.7478 68.2449C54.7283 67.8599 52.9923 67.2999 51.5398 66.7399C50.7249 66.4249 49.8392 66.0399 48.9535 65.5499C48.9003 65.5149 48.8472 65.4886 48.7941 65.4624C48.7409 65.4361 48.6878 65.4099 48.6346 65.3749C48.5638 65.3399 48.5283 65.3049 48.4929 65.2699C47.8552 64.9199 47.5009 64.6749 47.5009 64.6749C47.5009 64.6749 49.2015 67.4749 53.7009 68.8049C52.6381 70.1349 51.3272 71.7099 51.3272 71.7099C43.4975 71.4649 40.5215 66.3899 40.5215 66.3899C40.5215 55.1199 45.6232 45.9849 45.6232 45.9849C50.7249 42.2049 55.5786 42.3099 55.5786 42.3099L55.9329 42.7299C49.5558 44.5499 46.6152 47.3149 46.6152 47.3149C46.6152 47.3149 47.3946 46.8949 48.7055 46.2999C52.4963 44.6549 55.5078 44.1999 56.7478 44.0949L56.8272 44.0816C57.0059 44.0515 57.1645 44.0249 57.3501 44.0249C59.5112 43.7449 61.9558 43.6749 64.5066 43.9549C67.8723 44.3399 71.4861 45.3199 75.1706 47.3149C75.1706 47.3149 72.3718 44.6899 66.3489 42.8699L66.8449 42.3099C66.8449 42.3099 71.6986 42.2049 76.8003 45.9849C76.8003 45.9849 81.9021 55.1199 81.9021 66.3899C81.9021 66.3899 78.8906 71.4649 71.0609 71.7099ZM55.5852 56C53.5817 56 52 57.8018 52 60C52 62.1982 53.6169 64 55.5852 64C57.5888 64 59.1705 62.1982 59.1705 60C59.2056 57.8018 57.5888 56 55.5852 56ZM64.8281 60C64.8281 57.8018 66.4098 56 68.4134 56C70.4169 56 71.9986 57.8018 71.9986 60C71.9986 62.1982 70.4169 64 68.4134 64C66.445 64 64.8281 62.1982 64.8281 60Z"/>
+						</svg>
+					</a>
+				</div>
+			</div> <!-- /.wrap -->
+		</section> <!-- /.section9 -->
+
+
+		<footer class="footer">
+			<div class="wrap">
+				<p>DARS Inc. SR: 20220561130 File number: 6625437</p>
+				<p>16192 Coastal Highway, Lew es, Delaware 19958, County of Sussex</p>
+			</div> <!-- /.wrap -->
+		</footer> <!-- /.footer -->
+		<picture>
+			<source type="image/png" data-srcset="img/bg/1_m.png" srcset="img/placehold.png" media="(max-width: 480px)">
+			<img data-src="img/bg/1.png" alt="" width="1376" height="752" class="bg1 lazyload" src="img/placehold.png">
+		</picture>
+		<picture>
+			<source type="image/png" data-srcset="img/bg/4_m.png" srcset="img/placehold.png" media="(max-width: 480px)">
+			<img data-src="img/bg/4.png" alt="" width="1568" height="2240" class="bg4 lazyload" src="img/placehold.png">
+		</picture>
+		<picture>
+			<source type="image/png" data-srcset="img/bg/5_m.png" srcset="img/placehold.png" media="(max-width: 480px)">
+			<img data-src="img/bg/5.png" alt="" width="656" height="1152" class="bg5 lazyload" src="img/placehold.png">
+		</picture>
+		<img data-src="img/bg/6.png" alt="" width="1440" height="2240" class="bg6 lazyload" src="img/placehold.png">
+		<img data-src="img/bg/7.png" alt="" width="1632" height="2240" class="bg7 lazyload" src="img/placehold.png">
+		<img data-src="img/stars/1.svg" alt="" width="19" height="19" class="star1 lazyload" src="img/placehold.png">
+		<img data-src="img/stars/2.svg" alt="" width="32" height="32" class="star2 lazyload" src="img/placehold.png">
+		<img data-src="img/stars/2.svg" alt="" width="32" height="32" class="star3 lazyload" src="img/placehold.png">
+	</div> <!-- /.wrapper -->
+	
+	
+	<div id="js-modal" class="modal-box">
+		<div class="modal js-modal">
+			<div class="modal-body">
+				<a href="#" class="modal-close js-modal-close" data-id="#js-modal">
+					<svg width="40" height="40" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M14.001 15.2376L20.3815 21.6199L21.6205 20.3826L15.2383 14.0004L21.6205 7.61986L20.3833 6.38086L14.001 12.7631L7.62055 6.38086L6.3833 7.61986L12.7638 14.0004L6.3833 20.3809L7.62055 21.6199L14.001 15.2376Z" fill="#fff"/>
+					</svg>
+				</a> <!-- /.modal-close -->
+				<div class="modal-container">
+					<img data-src="img/collection.png" alt="" width="1426" height="988" class="lazyload" src="img/placehold.png">
+				</div>
+			</div>
+		</div> <!-- /.js-modal -->
+	</div> <!-- END id="js-modal" -->
+	
+	
+	<div class="menu" id="js-menu">
+		<div class="menu-container">
+			<svg class="menu-close" id="js-menu-close" width="26" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><path d="M972.2,885.6L584.3,496.2L962,110.9c23.9-23.9,23.9-62.5,0-86.4c-23.9-23.9-45.6-23.9-69.6,0L502.7,414.3L114.4,24.5c-23.9-23.9-62.5-23.9-86.4,0S4,87,27.9,110.9L417,500L28,889.1C4.1,913,4.1,951.6,28,975.5s62.5,23.9,86.4,0l385.1-392.9l392.9,392.9c23.9,23.9,55.8,20.4,79.6-3.4C995.9,948.4,996.1,909.5,972.2,885.6z"/></svg>
+			<ul class="menu-list">
+				<li class="menu-list-item">
+					<a href="#" class="menu-list-link js-scroll-to" data-id="#js-roadmap">Road Map</a>
+				</li>
+				<li class="menu-list-item">
+					<a href="https://finance.metoshi.com/" class="menu-list-link">Finance</a>
+				</li>
+				<li class="menu-list-item">
+					<a href="#" class="menu-list-link js-scroll-to" data-id="#js-tokenomics">Tokenomics</a>
+				</li>
+				<li class="menu-list-item">
+					<a href="https://whitepaper.metoshi.com/" class="menu-list-link">Whitepaper</a>
+				</li>
+				<li class="menu-list-item">
+					<a href="#" class="menu-list-link js-scroll-to" data-id="#js-contacts">Contacts</a>
+				</li>
+			</ul>
+		</div> <!-- /.menu-container -->
+	</div> <!-- /.menu -->
+	
+	
+	
+	<!-- scripts -->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/lazysizes.min.js" async></script>
+</body>
+</html>
