@@ -1265,9 +1265,17 @@ h2 i {
 	font-family: 'Georama-Bold';
 }
 
+.ru .roadmap-body {
+	font-family: 'Raleway-Bold';
+}
+
 .roadmap-body strong {
 	color: #F8DC30;
 	font-family: 'Georama-Medium';
+}
+
+.ru .roadmap-body strong {
+	font-family: 'Raleway-SemiBold';
 }
 
 .roadmap-body span {
@@ -1281,6 +1289,10 @@ h2 i {
 	font-size: 14px;
 	line-height: 17px;
 	color: rgba(255, 255, 255, 0.6);
+}
+
+.ru .roadmap-description {
+	font-family: 'Raleway-SemiBold';
 }
 
 /*  section7
@@ -1429,6 +1441,10 @@ h2 i {
 			transition: 0.3s;
 }
 
+.ru .faq-question-text {
+	font-family: 'Raleway-Bold';
+}
+
 .faq-question.active .faq-question-text {
 	font-size: 36px;
 	line-height: 43px;
@@ -1440,6 +1456,10 @@ h2 i {
 	padding-left: 45px;
 	color: #C2ABCB;
 	line-height: 21px;
+}
+
+.ru .faq-answer {
+	font-family: 'Raleway-SemiBold';
 }
 
 .faq-answer.active {
