@@ -735,6 +735,20 @@ document.addEventListener('DOMContentLoaded', function() {
 		
 		function handleSwitchLang(item) {
 			let lang = item.dataset.lang;
+			
+			translation(lang);
+			
+			btn.forEach((item2) => {
+				item2.classList.remove('active');
+			});
+			
+			item.classList.add('active');
+			page.classList.remove(item.dataset.toggle);
+			page.classList.add(lang);
+		}
+		
+		
+		function translation(lang) {
 			let words = langObj[lang];
 			
 			for (let key in words) {
@@ -746,15 +760,9 @@ document.addEventListener('DOMContentLoaded', function() {
 					el.innerHTML = words[key];
 				}
 			}
-			
-			btn.forEach((item2) => {
-				item2.classList.remove('active');
-			});
-			
-			item.classList.add('active');
-			page.classList.remove(item.dataset.toggle);
-			page.classList.add(lang);
 		}
+		
+		translation('en');
 	}
 	
 	switchLang();
