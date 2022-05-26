@@ -246,7 +246,6 @@ h2 i {
 	background-image: linear-gradient(180deg, #F8DC30, rgba(255, 255, 255, 0) 378.66%);
 }
 
-
 /*  header
     ------------------------------------------------------- */
 .header .wrap {
@@ -256,7 +255,12 @@ h2 i {
 }
 
 .header-left {
-	width: 274px;
+	width: 334px;
+}
+
+.header-logo-shadow {
+	-webkit-filter: drop-shadow(10px 10px 8px rgba(0, 0, 0, 0.33));
+			filter: drop-shadow(10px 10px 8px rgba(0, 0, 0, 0.33));
 }
 
 .header-link {
@@ -274,7 +278,7 @@ h2 i {
 }
 
 .header-right {
-	width: 310px;
+	width: 370px;
 	-webkit-justify-content: flex-end;
 			justify-content: flex-end;
 }
@@ -289,12 +293,16 @@ h2 i {
 	font-family: 'Georama-Bold';
 }
 
-.header-lang-item.ru {
+.header-lang-item {
 	margin-right: 34px;
 	position: relative;
 }
 
-.header-lang-item.ru::before {
+.header-lang-item:last-child {
+	margin: 0;
+}
+
+.header-lang-item::before {
 	content: '';
 	position: absolute;
 	top: 50%;
@@ -305,6 +313,10 @@ h2 i {
 	height: 45px;
 	background: #5B5071;
 	pointer-events: none;
+}
+
+.header-lang-item:last-child::before {
+	display: none;
 }
 
 .header-lang-item.active {
@@ -360,8 +372,24 @@ h2 i {
 .section1-title img {
 	position: absolute;
 	top: -6px;
-	left: -29px;
 	max-width: none;
+}
+
+.section1-stroke-en {
+	left: -29px;
+}
+
+.section1-stroke-ja {
+	left: -10px;
+}
+
+.ja .section1-stroke-en {
+	display: none;
+}
+
+.ru .section1-stroke-ja,
+.en .section1-stroke-ja {
+	display: none;
 }
 
 .section1-text1 {
@@ -479,9 +507,17 @@ h2 i {
 	font-family: 'Raleway-Black';
 }
 
+.ja .section2-title {
+	text-align: center;
+}
+
 .section2-title-line2 {
 	margin-top: -16px;
 	text-align: right;
+}
+
+.ja .section2-title-line2 {
+	display: none;
 }
 
 .section2-title-line1 span {
@@ -1179,10 +1215,9 @@ h2 i {
 	content: '';
 	position: absolute;
 	z-index: -1;
-	right: 18px;
+	right: 0;
 	bottom: 10px;
 	left: -18px;
-	width: 608px;
 	height: 24px;
 	background: #B500FF;
 }
@@ -1208,7 +1243,7 @@ h2 i {
 	width: 507px;
 	height: 106px;
 	border-radius: 29px;
-	padding-left: 93px;
+	padding: 0 10px 0 93px;
 	background: rgba(87, 12, 146, 0.3);
 	letter-spacing: 0.02em;
 }
@@ -1265,9 +1300,17 @@ h2 i {
 	font-family: 'Georama-Bold';
 }
 
+.ru .roadmap-body {
+	font-family: 'Raleway-Bold';
+}
+
 .roadmap-body strong {
 	color: #F8DC30;
 	font-family: 'Georama-Medium';
+}
+
+.ru .roadmap-body strong {
+	font-family: 'Raleway-SemiBold';
 }
 
 .roadmap-body span {
@@ -1281,6 +1324,10 @@ h2 i {
 	font-size: 14px;
 	line-height: 17px;
 	color: rgba(255, 255, 255, 0.6);
+}
+
+.ru .roadmap-description {
+	font-family: 'Raleway-SemiBold';
 }
 
 /*  section7
@@ -1317,6 +1364,11 @@ h2 i {
 	line-height: 172px;
 }
 
+.ja .section7-title {
+	font-size: 50px;
+	line-height: 1.1;
+}
+
 .section7-title span {
 	position: relative;
 }
@@ -1327,9 +1379,18 @@ h2 i {
 	z-index: -1;
 	top: -51px;
 	right: -15px;
+	color: rgba(0, 0, 0, 0.45);
 	font-size: 155px;
 	line-height: 185px;
-	color: rgba(0, 0, 0, 0.45);
+	white-space: nowrap;
+}
+
+.ja .section7-title span::before {
+	content: 'よくある質問';
+	top: -20px;
+	right: -20px;
+	font-size: 54px;
+	line-height: 1.1;
 }
 
 .section7-star1 {
@@ -1338,10 +1399,20 @@ h2 i {
 	right: 36px;
 }
 
+.ja .section7-star1 {
+	top: 2px;
+	right: 10px;
+	width: 20px;
+}
+
 .section7-star2 {
 	position: absolute;
 	top: 155px;
 	left: -17px;
+}
+
+.ja .section7-star2 {
+	top: 60px;
 }
 
 .faq {
@@ -1429,6 +1500,10 @@ h2 i {
 			transition: 0.3s;
 }
 
+.ru .faq-question-text {
+	font-family: 'Raleway-Bold';
+}
+
 .faq-question.active .faq-question-text {
 	font-size: 36px;
 	line-height: 43px;
@@ -1440,6 +1515,10 @@ h2 i {
 	padding-left: 45px;
 	color: #C2ABCB;
 	line-height: 21px;
+}
+
+.ru .faq-answer {
+	font-family: 'Raleway-SemiBold';
 }
 
 .faq-answer.active {
