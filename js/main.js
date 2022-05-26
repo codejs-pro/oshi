@@ -587,8 +587,14 @@ function modalWindow() {
 
 const langObj = {
 	ru: {
-		s1t1: 'Основной функционал',
-		s1t2: 'Получение дивидендов от игры <span>METOLAND</span> и любой деятельности платформы <span>Metoshi</span>',
+		hlink1: 'Road Map',
+		hlink2: 'Finance',
+		hlink3: 'Tokenomics',
+		hlink4: 'Whitepaper',
+		hlink5: 'Contacts',
+		s1token: 'Token',
+		s1t1: '<span class="gradient-purple">Основной функционал</span> Governance OSHI Token',
+		s1t2: 'Получение дивидендов от игры <strong>METOLAND</strong> и любой деятельности платформы <strong>Metoshi</strong>',
 		s2t1: 'Преимущества <span>Уставного</span>',
 		s2t2: 'токена <span>OSHI</span>',
 		s2t3: 'Пассивный доход и дивиденды каждому холдеру <span>OSHI</span> от продажи всех Игровых <span class="gradient-pink">NFT METOLAND</span> и иных <span>NFT</span> платформы <span>Metoshi</span>',
@@ -599,25 +605,42 @@ const langObj = {
 		s3t5: 'Готова игра <span class="gradient-purple">METOLAND</span> - <span class="gradient-yellow">P2E & F2P</span>',
 		s3t6: 'Игровая <span class="gradient-yellow">NFTs</span> коллекция',
 		s3t7: 'Коллекция комиксов о красной панде <span class="gradient-yellow">Metoshi</span>',
+		s4t1: 'Total Supply',
+		s4t2: 'BUY',
+		s4t3: 'SELL',
+		s4t4: 'Holders OSHI',
+		s4t5: 'Reward in METO ',
+		s4t6: 'Liquidity OSHI',
+		s4t7: 'Liquidity METO',
+		s4t8: 'Marketing',
 		s5t1: 'Токеномика',
-		rd1: '<span>1</span> Апрель - Май: <strong>IDO OSHI</strong>',
-		rd2: '<span>2</span> Май: <strong>OSHI листинг</strong>',
-		rd3: '<span>3</span> Май',
-		rt3: 'Первые дивиденды от продажи игровых NFTs METOLAND',
-		rd4: '<span>4</span> Май',
-		rt4: 'Дивиденды от второй продажи игровых NFTs METOLAND',
-		rd5: '<span>5</span> Июнь - Июль',
-		rt5: 'Дивиденды от продажи генеративной коллекции NFTs',
-		rd6: '<span>6</span> Август',
+		s5t2: '',
+		s5t3: 'IDO',
+		s5t4: 'Liquidity',
+		s5t5: 'Development & Advisers',
+		s5t6: 'Marketing',
+		s5t7: 'Team & Partnerships',
+		s5t8: 'OSHI Token',
+		s6t1: 'RoadMap',
+		rd1: '<span>1</span> Апрель - Май: <strong>IDO OSHI (Май - Июнь:)</strong>',
+		rd2: '<span>2</span> Май: <strong>ЛИСТИНГ OSHI (Июнь)</strong>',
+		rd3: '<span>3</span> Май - Июнь:',
+		rt3: 'Первые дивиденды от первой продажи игровых NFTs игры METOLAND',
+		rd4: '<span>4</span> Май - Июль:',
+		rt4: 'Дивиденды от второй продажи игровых NFTs игры METOLAND',
+		rd5: '<span>5</span> Июнь - Июль:',
+		rt5: 'Дивиденды от продажи генеративной коллекции Metoshi',
+		rd6: '<span>6</span> Август:',
 		rt6: 'Дивиденды от продажи игровых NFTs METOLAND 2.0',
-		rd7: '<span>7</span> Сентябрь - Октябрь',
-		rt7: 'Дивиденды от первой продажи NFT земель во вселенной MetOverse METOLAND ',
+		rd7: '<span>7</span> Сентябрь - Октябрь:',
+		rt7: 'Дивиденды от продажи земельных участков первой MetOverse',
+		s7t1: 'FAQ',
 		qu1: 'Что такое Metoshi?',
 		an1: 'METOSHI - это универсальная развлекательная платформа, объединяющая Metoshi GameFI и Cтудию комиксов.',
 		qu2: 'Что такое governance токен?',
 		an2: 'Это уставный (управляющий) токен, который дает право получения дивидендов и голосования по предложениям о развитии проекта, а также и иные преимущества экосистемы. $OSHI – это уставный токен Metoshi.',
 		qu3: 'Какие преимущества дает Governance токен OSHI?',
-		an3: '<ul><li>• Регулярные начисления дивидендов всем держателям $OSHI с продажи всех NFT на платформе Metoshi;</li><li>• Участие в голосовании по ключевым решениям по вопросам экономики Проекта.</li></ul>',
+		an3: '<ul><li>• Регулярные начисления дивидендов всем держателям $OSHI с продажи всех NFT на платформе Metoshi;</li><li>• Участие в голосовании по ключевым решениям по вопросам экономики Проекта.</li><li>• Следите за анонсами!</li></ul>',
 		qu4: 'Как я могу купить или продать $OSHI?',
 		an4: 'Ограниченное количество можно приобрести за токен $METO на пресейле, далее на этапе IDO за BNB (или BUSD) на лаунчпадах, а также на биржах уже после листинга. Продать незалоченный токен OSHI можно будет также на бирже сразу после листинга.',
 		qu5: 'Какой блокчейн использует Metoshi?',
@@ -631,11 +654,17 @@ const langObj = {
 		link1: 'https://t.me/metoshi_rus'
 	},
 	en: {
-		s1t1: 'Core functions of',
-		s1t2: 'Earn dividends from <strong>METOLAND</strong> game and on any activity of <strong>Metoshi Platform</strong>',
+		hlink1: 'Road Map',
+		hlink2: 'Finance',
+		hlink3: 'Tokenomics',
+		hlink4: 'Whitepaper',
+		hlink5: 'Contacts',
+		s1token: 'Token',
+		s1t1: '<span class="gradient-purple">Core function of</span> Governance OSHI Token',
+		s1t2: 'Earn dividends from <strong>METOLAND</strong> game and all services provided by <strong>Metoshi Platform</strong>',
 		s2t1: 'Why should you <span>buy</span>',
 		s2t2: '<span>Governance</span> Oshi Token?',
-		s2t3: 'Passive income and dividends to each <span>OSHI</span> holder from the sale of <span class="gradient-pink">METOLAND Gaming</span> NFTs as well as all other <span>Metoshi NFT releases!</span>',
+		s2t3: 'Passive income and dividends to each <span>$OSHI</span> holder from the sales of <span class="gradient-pink">METOLAND Gaming</span> NFTs as well as any other <span>Metoshi NFT releases!</span>',
 		s3t1: 'Metoshi',
 		s3t2: 'Platform',
 		s3t3: 'today:',
@@ -643,12 +672,28 @@ const langObj = {
 		s3t5: '<span class="gradient-purple">METOLAND</span> game is ready – P2E & F2P',
 		s3t6: 'Gaming <span class="gradient-yellow">NFT</span> Collection',
 		s3t7: '<span class="gradient-yellow">Collection</span> of comics about Red Panda <span class="gradient-purple">Metoshi</span>',
+		s4t1: 'Total Supply',
+		s4t2: 'BUY',
+		s4t3: 'SELL',
+		s4t4: 'Holders OSHI',
+		s4t5: 'Reward in METO ',
+		s4t6: 'Liquidity OSHI',
+		s4t7: 'Liquidity METO',
+		s4t8: 'Marketing',
 		s5t1: 'Tokenomics',
-		rd1: '<span>1</span> April - May: <strong>OSHI IDO</strong>',
-		rd2: '<span>2</span> May: <strong>OSHI LISTING</strong>',
-		rd3: '<span>3</span> May',
+		s5t2: '',
+		s5t3: 'IDO',
+		s5t4: 'Liquidity',
+		s5t5: 'Development & Advisers',
+		s5t6: 'Marketing',
+		s5t7: 'Team & Partnerships',
+		s5t8: 'OSHI Token',
+		s6t1: 'RoadMap',
+		rd1: '<span>1</span> April - May: <strong>OSHI IDO (May - June:)</strong>',
+		rd2: '<span>2</span> May: <strong>OSHI LISTING (June)</strong>',
+		rd3: '<span>3</span> May (June)',
 		rt3: 'First dividends from selling the 1st release of METOLAND Gaming NFTs',
-		rd4: '<span>4</span> May',
+		rd4: '<span>4</span> May (July)',
 		rt4: 'Dividends from the second release of METOLAND Gaming NFTs',
 		rd5: '<span>5</span> June - July',
 		rt5: 'Dividends from selling Metoshi\'s PFP collection',
@@ -656,12 +701,13 @@ const langObj = {
 		rt6: 'Dividends from selling METOLAND 2.0 Gaming NFTs',
 		rd7: '<span>7</span> September - October',
 		rt7: 'Dividends from selling first MetOverse land lots',
+		s7t1: 'FAQ',
 		qu1: 'What is Metoshi?',
 		an1: 'METOSHI is a one-stop entertainment platform that combines a Comic Studio and a GameFi Studio.',
 		qu2: 'What is a governance token?',
 		an2: 'A governance token gives its holder the right to earn dividends & vote on proposals, as well as access to other perks in the ecosystem. $OSHI is Metoshi’s g-token.',
 		qu3: 'What are the benefits of Governance OSHI token?',
-		an3: '<ul><li>• Regular accrual of dividends for holding $OSHI from all NFT sales on the Metoshi Platform</li><li>• Participation in voting on key decisions re. project economy.</li></ul>',
+		an3: '<ul><li>• Regular accrual of dividends for holding $OSHI from all NFT sales on the Metoshi Platform</li><li>• Participation in voting on key decisions re. project economy.</li><li>• More to come!</li></ul>',
 		qu4: 'How can I buy or sell $OSHI?',
 		an4: 'A limited amount can be purchased for our utility METO token at Presale, then at IDO for BNB (or BUSD) on launchpads, and after the listing it will be available on an exchange. You’ll be able to sell your unvested $OSHIs as soon as it is listed.',
 		qu5: 'What blockchain does Metoshi use?',
@@ -673,7 +719,74 @@ const langObj = {
 		qu8: 'How do I swap my Governance NFTs for $OSHI?',
 		an8: '<p>Instructions to swap NFT for $OSHI:</p><ul><li>1. Go to the website https://finance.metoshi.com/</li><li>2. Connect the wallet "Connect wallet"</li><li>3. Click "Approve"</li><li>4. Click "Start vesting OSHI" You get 10% of your $OSHI</li><li>5. Further, every 30 days after $OSHI listing, you can claim 15%.</li></ul>',
 		link1: 'https://t.me/metoshi_redpanda'
-	}
+	},
+	ja: {
+		hlink1: 'ロードマップ',
+		hlink2: 'ファイナンス',
+		hlink3: 'トケノミクス',
+		hlink4: 'ホワイトペーパー',
+		hlink5: '問い合わせ',
+		s1token: 'トークン',
+		s1t1: 'OSHIトークンガバナンスの主な機能',
+		s1t2: '<strong>METOLAND</strong>ゲームおよび<strong>Metoshi</strong>プラットフォーム のアクティビティから配当を受け取る',
+		s2t1: '<span>OSHI</span>トークンのメリット',
+		s2t2: '',
+		s2t3: 'すべての<span class="gradient-pink">NFTゲームMETOLAND</span>およびその他の<span>MetoshiNTF</span>プラットフォームの販売による各<span>OSHI</span>保有者への受動的収入および配当',
+		s3t1: '今日の',
+		s3t2: 'METOSHI',
+		s3t3: 'プラットフォーム：',
+		s3t4: '<span class="gradient-yellow">METO</span>トークンは<span class="gradient-purple">Pancakeswap</span>で正常に取引されます',
+		s3t5: '<span class="gradient-purple">METOLAND</span>ゲーム-<span class="gradient-yellow">P2E＆F2P</span>準備完了',
+		s3t6: '<span class="gradient-yellow">NFT</span>ゲームコレクション',
+		s3t7: '<span class="gradient-yellow">Metoshi</span>レッサーパンダコミックコレクション',
+		s4t1: 'トータルサプライ',
+		s4t2: '購入',
+		s4t3: '販売',
+		s4t4: '保有者OSHI',
+		s4t5: 'Reward in METO ',
+		s4t6: '流動性OSHI',
+		s4t7: '流動性METO',
+		s4t8: 'マーケティング',
+		s5t1: '',
+		s5t2: 'トケノミクス',
+		s5t3: 'IDO',
+		s5t4: '流動性',
+		s5t5: '開発およびアドバイザー',
+		s5t6: 'マーケティング',
+		s5t7: 'チームとパートナーシップ',
+		s5t8: 'OSHIトークン',
+		s6t1: 'ロードマップ',
+		rd1: '<span>1日</span> 4月〜5月：<strong>IDO OSHI</strong>',
+		rd2: '<span>2日</span> 5月：<strong>OSHI上場</strong>',
+		rd3: '<span>3日</span> 5月',
+		rt3: 'NFTMETOLANDゲームの売却による最初の配当',
+		rd4: '<span>4日</span> 5月',
+		rt4: 'NFTMETOLANDゲームの2回目の販売からの配当',
+		rd5: '<span>5日</span> 6月〜7月',
+		rt5: 'NFTのジェネラルコレクションの販売による配当',
+		rd6: '<span>6日</span> 8月',
+		rt6: 'NFTMETOLAND2.0ゲームの販売による配当',
+		rd7: '<span>7日</span> 9月-10月',
+		rt7: 'MetOverseMETOLANDユニバースでのNFT土地の最初の売却からの配当',
+		s7t1: 'よくある質問',
+		qu1: 'METOSHI (メトシ)とは？',
+		an1: 'METOSHIは、コミックスタジオ、Metoshi Marketplace、MetoshiGameFIを統合した総合的なエンターテインメント用のプラットフォームです。',
+		qu2: 'OSHIトークンとは何ですか？',
+		an2: 'METOSHIは、コミックスタジオ、Metoshi Marketplace、MetoshiGameFIを統合した総合的なエンターテインメント用のプラットフォームです。',
+		qu3: 'METOSHIプラットフォームとは何ですか？',
+		an3: 'METOSHIは、コミックスタジオ、Metoshi Marketplace、MetoshiGameFIを統合した総合的なエンターテインメント用のプラットフォームです。',
+		qu4: 'OSHIトークンとは何ですか？',
+		an4: 'これは、Metoshiプラットフォームの所有権を共有し、配当と投票、およびエコシステムの他の利点を受け取る権利を提供するトークンです。',
+		qu5: 'OSHIトークンを売買するにはどうすればよいですか？',
+		an5: 'IDOの最初の段階では、限定された数ですがMETOトークンで購入できます。また、上場後、証券取引所で購入できます。上場後、OSHIトークンを販売することができます。',
+		qu6: 'Metoshiはどのブロックチェーンを使用していますか？',
+		an6: 'バイナンススマートチェーン。これは、スケーラブルで安全、すばやい取引を提供するブロックチェーンです。',
+		qu7: 'METOトークンの利点は何ですか？',
+		an7: 'METOトークンは、MetoshiプラットフォームのBEP-20ユーティリティトークンです。 METOはPanCakeSwapで取引されており、すべてのMetoshiサービスはMETOに対してのみ提供されます。',
+		qu8: 'NFTコミックとは何ですか？',
+		an8: '特定のシーズンのNFTコミックを収集することで、Metoshiプラットフォームの最高ななゲームがもれなくゲットできます。これにより、「コミックブックの所有者」のステータスが付与され、すべてのMetoshiの前売りでの割り当てが保証されるなど、多くの追加の特典や機能が提供されます。',
+		link1: 'https://t.me/metoshi_ch'
+	},
 }
 
 
@@ -743,7 +856,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			});
 			
 			item.classList.add('active');
-			page.classList.remove(item.dataset.toggle);
+			page.classList.remove('ru', 'en', 'ja');
 			page.classList.add(lang);
 		}
 		
@@ -752,13 +865,15 @@ document.addEventListener('DOMContentLoaded', function() {
 			let words = langObj[lang];
 			
 			for (let key in words) {
-				let el = document.querySelector('.js-lang-'+ key);
+				let el = document.querySelectorAll('.js-lang-'+ key);
 				
-				if (key === 'link1') {
-					el.setAttribute('href', words[key]);
-				} else {
-					el.innerHTML = words[key];
-				}
+				el.forEach((item) => {
+					if (key === 'link1') {
+						item.setAttribute('href', words[key]);
+					} else {
+						item.innerHTML = words[key];
+					}
+				});
 			}
 		}
 		
